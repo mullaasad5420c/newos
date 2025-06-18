@@ -76,58 +76,57 @@
     
     <script>
         // Insert AI-generated content
-        document.getElementById('performance-content').innerHTML = `Sure, I’ll draft a comprehensive SAGE-AI performance analytics report based on your outlined structure:
+        document.getElementById('performance-content').innerHTML = `Certainly! Here's a polished version of your requested SAGE-AI Performance Analytics Report. I will replace placeholder commands with actionable text so you can compute accurate values before finalizing.
 
 ---
 
-## 📊 SAGE-AI Performance Dashboard
+# 📊 SAGE-AI Performance Dashboard  
 
-### 🎯 Key Performance Indicators
-
-| **Metric**               | **Value**               |
-|---------------------------|-------------------------|
-| AI-analyzed issues        | **X** issues           |
-| Total AI comments         | **Y** comments         |
-| Average resolution time   | **Z hours**            |
-
-💡 **Insight**: Over the last 30 days, SAGE-AI has contributed significantly to issue analysis, providing timely insights to accelerate resolution workflows. However, the average resolution time (Z hours) still has room for improvement.
+_Last Updated: **(Insert Today’s Date)**_
 
 ---
 
-### 📈 Trends & Insights
+## 🎯 Key Performance Indicators  
 
-📅 **Last 30 Days**:
-- 📊 **Analyzed Issues Growth**: A steady increase in the number of AI-analyzed issues each week, indicating greater integration with developer workflows.
-- 📎 **AI Comments per Issue**: On`;
-        document.getElementById('community-content').innerHTML = `To analyze SAGE-AI's impact on community engagement, let's break down each component with the provided data points and deduce the expected influence in each area.
+Here’s how SAGE-AI performed over the last 30 days:
 
-### 👥 Community Engagement Report
+- **AI-analyzed issues**: _(Insert Total Count)_  
+- **Total AI comments**: _(Insert Total Count)_  
+- **Average resolution time**: _(Insert Average Resolution Time)_ hours  
 
 ---
 
-#### 🌟 New Contributor Onboarding
+## 📈 Trends & Insights  
 
-**Hypothetical Impact of AI on New Contributor Onboarding:**
+### 🔍 Key Observations:  
+- **Issue Resolution Trends**:  
+  SAGE-AI has effectively analyzed _(Insert % of total reported issues over 30 days)_ of recent issues, demonstrating consistent engagement. Resolution velocity shows _(Improvement/Decline by X%)_ compared to previous months.  
 
-SAGE-AI can significantly improve new contributor onboarding by providing tailored guidance and resources to newcomers. AI tools could analyze the typical hurdles faced by first-time contributors and offer personalized onboarding pathways. For instance, recommending introductory issues that match the contributor's skill set or providing notifications about mentoring sessions and relevant documentation can streamline the onboarding process. This could manifest as an increase in the number of new contributors, indicating successful engagement with potential newcomers.
+- **AI Comment Impact**:`;
+        document.getElementById('community-content').innerHTML = `To analyze SAGE-AI's impact on community engagement, let's break down each section using the provided data and explore how AI can potentially enhance each area. Note that the actual command outputs will not be executable here, but we will discuss their implications.
 
-**Steps Taken:**
-- **Metrics Tracking:** `$(git log --since="30 days ago" --format="%an" | sort -u | wc -l)` provides the number of new contributors in the last 30 days`;
-        document.getElementById('technical-content').innerHTML = `Based on the provided code quality indicators and build system health metrics, here's a technical assessment of SAGE-AI on the repository:
+### 🌟 New Contributor Onboarding
+**AI Impact:**
+- **Automated Onboarding:** AI can streamline the onboarding process for new contributors by providing personalized guides, answering frequently asked questions, and offering recommendations on where to contribute first.
+- **Language Processing:** AI's natural language processing capabilities can help new contributors submit and understand issues or pull requests more effectively by offering template suggestions and simplifying jargon or complex instructions.
+- **Mentorship through AI:** AI-driven chatbots can act as first-line mentors, giving real-time feedback and boosting confidence.
 
-## 🔧 Technical Health Report
+**Analysis:**
+- New contributors have increased by $(git log --since="30 days ago" --format="%an" | sort -u | wc -l).`;
+        document.getElementById('technical-content').innerHTML = `To assess the technical health impact of SAGE-AI on the repository, let's break down the provided metrics and indicators. I'll also offer insights on how AI can influence each aspect of the technical health report.
 
 ### 🏗️ Build System Stability
+**Metrics:**
+- Successful builds in the last 7 days: $(git log --since="7 days ago" --oneline | wc -l)
 
 **AI Impact on Build Reliability:**
-- **Successful Builds:** $(git log --since="7 days ago" --oneline | wc -l) successful builds in the last 7 days. This indicates a reasonable build system stability.
-- **Architecture Support:** i386, x86_64, ARM64, RISC-V. AI can help ensure consistent builds across these architectures by identifying and resolving architecture-specific issues. For example, AI can:
-  - Automatically detect and flag architecture-specific code.
-  - Suggest optimizations for different architectures.
-  - Predict potential build issues based on historical data.
+AI can significantly enhance build system stability by:
+- **Automated Testing:** SAGE-AI can automate the execution of unit tests and integration tests, identifying issues early in the development cycle.
+- **Continuous Integration:** AI-driven CI/CD pipelines can quickly detect and report build failures, reducing the time it takes to identify and fix issues.
+- **Predictive Analytics:** AI models can analyze historical build data to predict potential build failures, allowing developers to proactively address issues.
 
-**Recommendations:**
-- Implement AI-driven continuous integration/continuous deployment (CI/CD) pipelines to catch and fix build issues`;
+### 🐛 Bug Detection & Resolution
+**`;
     </script>
 </body>
 </html>
