@@ -76,47 +76,50 @@
     
     <script>
         // Insert AI-generated content
-        document.getElementById('performance-content').innerHTML = `Here's a comprehensive and visually appealing SAGE-AI Performance Analytics Report using the metrics, context, and details you provided:
+        document.getElementById('performance-content').innerHTML = `Certainly! Below is a comprehensive structure for the **SAGE-AI Performance Analytics Report** based on the input data and provided format. Since I don't have access to real-time data or execution results of your commands, I've left placeholders for you to input the values. Once you have the data, fill in the placeholders, and the structure will make your report both insightful and engaging.
 
 ---
 
-## 📊 **SAGE-AI Performance Dashboard**
+# 📊 SAGE-AI Performance Dashboard
 
-### 🎯 **Key Performance Indicators**
+## Last 30 Days Performance Summary
+- **AI-analyzed issues**: [Insert number]
+- **Total AI comments**: [Insert number]
+- **Average resolution time**: [Insert average in hours]
 
-- **AI-analyzed issues:** `352`  
-- **Total AI comments:** `1,128`
-- **Average resolution time:** `4.5 hours`
+---
 
-#### 📌 **Repository Context**
-- **Total open issues:** `$(gh issue list --state open --json number | jq length)`  
-- **Total open PRs:** `$(gh pr list --state open --json number | jq length)`  
-- **Recent commits (last 7 days):** `$(git log --oneline --since="7 days ago" | wc -l)`  
+## 🎯 Key Performance Indicators
 
-### 📈 **Trends & Insights**
+| **Metric**                | **Value**                 | **Performance**        |
+|----------------------------|---------------------------|-------------------------|
+| Issues analyzed by AI      | [Insert number]           | 🔺/🔻 (Compare to previous 30 days) |
+| AI comments posted         | [Insert`;
+        document.getElementById('community-content').innerHTML = `To effectively analyze SAGE-AI’s impact on community engagement, we need to break down and interpret the data provided, along with some insights on the broader use of AI within the community. Here’s a structured analysis based on the categories you've outlined:
 
-1. **Issue Analysis Growth**  
-   In the last 30 days, SAGE-AI analyzed 352 issues—a 15% increase compared`;
-        document.getElementById('community-content').innerHTML = `To analyze SAGE-AI's impact on community engagement, we need to delve into several aspects of how AI can positively influence the community's dynamics, communication quality, learning environment, and overall collaboration. Below is a structured approach to evaluating these impacts using the provided recent activity data.
+### 🌟 New Contributor Onboarding
 
-### 👥 Community Engagement Report
+**How AI helps new contributors**:  
+AI tools like SAGE-AI can significantly enhance the onboarding process for new contributors by automating repetitive tasks, offering intelligent code suggestions, and providing immediate feedback on contributions. This reduces the barrier to entry, making it easier for newcomers to understand the codebase and effectively participate. New contributors likely benefit from AI-guided tutorials or responsive chatbots that answer their queries and guide them through their initial contributions. This not only increases the number of new contributors but also likely improves their initial experience and engagement levels.
 
-#### 🌟 New Contributor Onboarding
-**How AI helps new contributors:**
+### 💬 Communication Quality
 
-SAGE-AI can significantly aid in onboarding new contributors by providing a guided, user-friendly introduction to the community. AI systems can automatically generate helpful documentation, tutorials, and FAQs that explain project conventions, contribution guidelines, and best practices. New contributors can interact with these AI tools to ask questions and get immediate, relevant answers, helping them acclimate faster to the community. This lowers the barriers to entry and makes the process less intimidating, potentially reflected in the number of new contributors (calculated using `git log --since="30 days ago" --format="%an" | sort -u |`;
-        document.getElementById('technical-content').innerHTML = `Based on the provided data and context, here's a technical health assessment for the repository using SAGE-AI:
+**AI impact on issue/PR discussions**:  
+AI tools can elevate the quality of communication in issues and pull request (PR`;
+        document.getElementById('technical-content').innerHTML = `Based on the provided data and context, here's a technical health assessment of the repository with the integration of SAGE-AI:
 
 ## 🔧 Technical Health Report
 
 ### 🏗️ Build System Stability
 **AI Impact on Build Reliability:**
-- **Positive Impact:** SAGE-AI can analyze commit messages and changes to predict potential build issues. For example, if a commit message indicates a change in a critical build script, SAGE-AI can trigger a preemptive build to catch issues early.
-- **Recommendations:** Implement a CI/CD pipeline that integrates SAGE-AI to automatically analyze commits and trigger builds. Use SAGE-AI's insights to prioritize and address build failures.
+SAGE-AI can significantly enhance build system stability by:
+- **Automated Testing:** SAGE-AI can run automated tests on each commit, identifying issues before they reach the build stage. This reduces the number of failed builds.
+- **Predictive Analytics:** By analyzing historical build data, SAGE-AI can predict potential build failures and alert the team, allowing for proactive issue resolution.
+- **Continuous Integration:** SAGE-AI can integrate with CI systems to provide real-time feedback on build health, enabling quicker identification and resolution of build issues.
 
 ### 🐛 Bug Detection & Resolution
 **How AI Helps Identify and Fix Issues:**
-- **Bug Detection:** SAGE-AI can analyze commit history and code changes to identify patterns associated with bugs. For instance, if a bug is consistently introduced after a specific type of code`;
+- **Automated Bug Detection:** SAGE-AI can analyze`;
     </script>
 </body>
 </html>
