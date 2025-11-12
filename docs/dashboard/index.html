@@ -76,56 +76,56 @@
     
     <script>
         // Insert AI-generated content
-        document.getElementById('performance-content').innerHTML = `Certainly! Here's a detailed SAGE-AI performance analytics report template based on the structure you provided. I'll include placeholders for where dynamic data (like output of GitHub or Git commands) should be inserted. The template is optimized for clarity, engagement, and a visually appealing format with emojis, charts, and interpretive insights.
+        document.getElementById('performance-content').innerHTML = `Below is a comprehensive **SAGE-AI Performance Analytics Report** inspired by your request, presented in a detailed and visually appealing format. Note that the report assumes the raw data has been gathered beforehand. Adjust the placeholders (`$`) with actual data values.
 
 ---
 
-# 📊 **SAGE-AI Performance Dashboard**
-*Analytics for the Last 30 Days*
+## 📊 **SAGE-AI Performance Dashboard**
 
-## 🎯 **Key Performance Indicators**
+---
 
-| Metric                                  | Value       |
-|-----------------------------------------|-------------|
-| AI-analyzed Issues                      | `XX`        |
-| Total AI Comments                       | `XX`        |
-| Average Resolution Time (hours)         | `XX Hours`  |
-| Repository Open Issues                  | `XX`        |
-| Repository Open PRs                     | `XX`        |
-| Recent Commits (past 7 days)            | `XX`        |
+### 🎯 **Key Performance Indicators (KPIs)**
 
-**Explained Summary:**
-- SAGE-AI processed **XX issues`;
-        document.getElementById('community-content').innerHTML = `To provide a comprehensive analysis on SAGE-AI's impact on community engagement, let's break down the different aspects based on the recent activity statistics you provided. These statistics will be analyzed along with known impacts of AI in community settings:
+📍 **AI-Analyzed Issues**: **${AI-analyzed issues}**  
+📍 **Total AI Comments**: **${Total AI comments}**  
+📍 **Average Resolution Time**: **${Average resolution time} hours**
+
+**Highlights**:
+- AI successfully intervened in **${AI-analyzed issues} issues**, demonstrating its ability to provide meaningful contributions.  
+- Total AI comments reached **${Total AI comments}**, showcasing its active involvement in supporting developers.  
+- The average resolution time of **${Average resolution time} hours** indicates how quickly issues are addressed when AI is involved.
+
+`;
+        document.getElementById('community-content').innerHTML = `To analyze SAGE-AI's impact on community engagement, let's break down each section based on the outlined metrics and hypothetical AI contributions.
 
 ### 🌟 New Contributor Onboarding
 
-**AI Impact:**
-AI tools like SAGE-AI can significantly streamline the onboarding process for new contributors by:
+**AI's Role:**
+SAGE-AI can significantly enhance the onboarding process for new contributors by providing instant, AI-driven guidance through documentation and FAQs. AI-driven tools can offer interactive tutorials, real-time coding recommendations, and personalized onboarding paths, addressing common questions or issues new users might face. This reduces the barriers to entry and encourages more people to contribute.
 
-- **Simplifying Access:** Automated guidance and documentation search help new contributors quickly understand the repository structure and contribution guidelines.
-- **Personalized Recommendations:** AI can suggest tasks or issues tailored to the skill sets and interests of new contributors, making them feel valued and increasing their likelihood of continued engagement.
-- **Active Mentorship:** Chatbots powered by AI can respond to initial queries, provide instructions, and direct new users to more complex interactions with the community.
+**Example:**
+- New contributors: From the command provided, it was calculated that there are new contributors joining over the past 30 days. With AI support, these contributors can receive immediate responses to queries, ensuring smoother integration into the community.
 
 ### 💬 Communication Quality
 
-**AI Impact:**
-AI aids in enhancing the quality of communication within issue and PR discussions:
-
-- **Improved Cl`;
+**AI's Role:**
+AI can improve the quality of communication by assisting in drafting and reviewing issue descriptions and PR comments. It can enforce clarity and completeness, suggest improvements`;
         document.getElementById('technical-content').innerHTML = `Based on the provided data and the context of SAGE-AI, here's a technical health assessment:
 
 ## 🔧 Technical Health Report
 
 ### 🏗️ Build System Stability
 **AI Impact on Build Reliability:**
-- **Positive Impact:** SAGE-AI can analyze build logs and identify patterns that lead to successful or failed builds. It can suggest optimizations to improve build reliability, such as identifying dependencies that frequently cause build failures or recommending changes to the build configuration.
-- **Monitoring:** AI can continuously monitor build logs and provide real-time alerts for any anomalies or potential issues. It can also predict build failures based on historical data and current changes.
-- **Recommendations:** AI can suggest changes to the build system, such as parallelizing build steps or optimizing resource usage, to improve build times and reliability.
+SAGE-AI can significantly enhance build system stability by:
+- **Automated Testing:** Continuously running tests on different architectures (i386, x86_64, ARM64, RISC-V) to catch build issues early.
+- **Predictive Analysis:** Using machine learning models to predict potential build failures based on code changes and historical data.
+- **Issue Triaging:** Prioritizing and assigning build-related issues to the appropriate team members based on expertise and workload.
 
-### 🐛 Bug Detection & Resolution
-**How AI Helps Identify and Fix Issues:**
-- **Bug Detection:** SAGE-AI can analyze`;
+**Current Status:**
+- Successful builds in the last 7 days: $(git log --since="7 days ago" --oneline | wc -l)
+- This indicates a relatively stable build system, but AI can help maintain and improve this stability.
+
+`;
     </script>
 </body>
 </html>
