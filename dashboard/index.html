@@ -76,52 +76,56 @@
     
     <script>
         // Insert AI-generated content
-        document.getElementById('performance-content').innerHTML = `# 📊 SAGE-AI Performance Dashboard  
-**A comprehensive report showcasing SAGE-AI’s performance, insights, and impact on repository efficiency over the past 30 days.**  
+        document.getElementById('performance-content').innerHTML = `Certainly! Here's a detailed SAGE-AI performance analytics report template based on the structure you provided. I'll include placeholders for where dynamic data (like output of GitHub or Git commands) should be inserted. The template is optimized for clarity, engagement, and a visually appealing format with emojis, charts, and interpretive insights.
 
 ---
 
-## 🎯 Key Performance Indicators
+# 📊 **SAGE-AI Performance Dashboard**
+*Analytics for the Last 30 Days*
 
-### 📜 **Key Metrics (Last 30 Days):**
-- **AI-analyzed issues:** _XXX_  
-- **Total AI comments:** _YYY_  
-- **Average resolution time:** _ZZZ hours_
+## 🎯 **Key Performance Indicators**
 
-### 📄 **Repository Context:**
-- **Total open issues:** `$(gh issue list --state open --json number | jq length)`  
-- **Total open PRs:** `$(gh pr list --state open --json number | jq length)`  
-- **Recent commits (last 7 days):** `$(git log --oneline --since="7 days ago" | wc -l)`  
+| Metric                                  | Value       |
+|-----------------------------------------|-------------|
+| AI-analyzed Issues                      | `XX`        |
+| Total AI Comments                       | `XX`        |
+| Average Resolution Time (hours)         | `XX Hours`  |
+| Repository Open Issues                  | `XX`        |
+| Repository Open PRs                     | `XX`        |
+| Recent Commits (past 7 days)            | `XX`        |
 
----
-## 📈 Trends & Insights  
-
-After reviewing the last 30 days, here are key trends extracted from SAGE-A`;
-        document.getElementById('community-content').innerHTML = `Let's break down the analysis of SAGE-AI's impact on community engagement based on the provided activity metrics. While I can't execute or access real-time data, I'll guide you through a hypothetical approach to understanding the AI's role in community activities:
+**Explained Summary:**
+- SAGE-AI processed **XX issues`;
+        document.getElementById('community-content').innerHTML = `To provide a comprehensive analysis on SAGE-AI's impact on community engagement, let's break down the different aspects based on the recent activity statistics you provided. These statistics will be analyzed along with known impacts of AI in community settings:
 
 ### 🌟 New Contributor Onboarding
 
-**How AI helps new contributors:**
-- **Guided Onboarding:** AI can provide step-by-step onboarding guides, offering personalized advice for new contributors based on their past interactions or interests.
-- **Automated Suggestions:** By analyzing the project's codebase and issues, AI tools can recommend relevant tasks for new contributors, matching their skill sets and helping them make meaningful contributions faster.
-- **Engagement Feedback:** AI-driven analytics could give feedback on a new contributor’s engagement quality, ensuring they receive proper acknowledgment for their efforts and guidance on how to enhance their skills.
+**AI Impact:**
+AI tools like SAGE-AI can significantly streamline the onboarding process for new contributors by:
+
+- **Simplifying Access:** Automated guidance and documentation search help new contributors quickly understand the repository structure and contribution guidelines.
+- **Personalized Recommendations:** AI can suggest tasks or issues tailored to the skill sets and interests of new contributors, making them feel valued and increasing their likelihood of continued engagement.
+- **Active Mentorship:** Chatbots powered by AI can respond to initial queries, provide instructions, and direct new users to more complex interactions with the community.
 
 ### 💬 Communication Quality
 
-**AI impact on issue/PR discussions:**
-- **Automated Summarization:** AI`;
-        document.getElementById('technical-content').innerHTML = `Based on the provided data and context, here's a technical health assessment for the repository using SAGE-AI:
+**AI Impact:**
+AI aids in enhancing the quality of communication within issue and PR discussions:
+
+- **Improved Cl`;
+        document.getElementById('technical-content').innerHTML = `Based on the provided data and the context of SAGE-AI, here's a technical health assessment:
 
 ## 🔧 Technical Health Report
 
 ### 🏗️ Build System Stability
 **AI Impact on Build Reliability:**
-- **Positive Impact:** SAGE-AI can analyze commit messages and changes to predict potential build issues. For example, if a commit message indicates a change in a critical build script, SAGE-AI can trigger a build test to catch issues early.
-- **Recommendations:** Implement a CI/CD pipeline that integrates SAGE-AI to automatically trigger builds based on relevant commit patterns. This can help maintain build system stability by catching issues before they reach the main branch.
+- **Positive Impact:** SAGE-AI can analyze build logs and identify patterns that lead to successful or failed builds. It can suggest optimizations to improve build reliability, such as identifying dependencies that frequently cause build failures or recommending changes to the build configuration.
+- **Monitoring:** AI can continuously monitor build logs and provide real-time alerts for any anomalies or potential issues. It can also predict build failures based on historical data and current changes.
+- **Recommendations:** AI can suggest changes to the build system, such as parallelizing build steps or optimizing resource usage, to improve build times and reliability.
 
 ### 🐛 Bug Detection & Resolution
-**AI Helps Identify and Fix Issues:**
-- **Positive Impact:** SAGE-AI can analyze commit messages and code changes to identify potential bugs. For instance, if a commit message indicates a bug fix, SAGE-AI`;
+**How AI Helps Identify and Fix Issues:**
+- **Bug Detection:** SAGE-AI can analyze`;
     </script>
 </body>
 </html>
