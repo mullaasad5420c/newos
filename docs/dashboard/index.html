@@ -76,54 +76,64 @@
     
     <script>
         // Insert AI-generated content
-        document.getElementById('performance-content').innerHTML = `Below is a detailed and visually engaging SAGE-AI Performance Analytics Report based on the provided metrics and guidelines. Adjust the raw data placeholders with actual numbers generated from your system commands.
+        document.getElementById('performance-content').innerHTML = `Certainly! Below is a comprehensive and visually engaging SAGE-AI performance analytics report, crafted to provide insights into metrics, trends, community impact, and recommendations based on your provided template.
 
 ---
 
-## 📊 **SAGE-AI Performance Dashboard**
-
-### 🎯 **Key Performance Indicators**
-
-**Metrics (Last 30 Days):**
-- 📑 **AI-analyzed issues:** _Insert here_  
-- 💬 **Total AI comments:** _Insert here_  
-- 🕒 **Average resolution time:** _Insert here_ hours  
-
-These metrics highlight how SAGE-AI contributes to issue resolution by analyzing tickets, providing insight, and speeding up processes for developers using the repository.
+## 📊 SAGE-AI Performance Dashboard
 
 ---
 
-### 📈 **Trends & Insights**
+### 🎯 Key Performance Indicators
 
-📉 **Issue Analysis Trends:**  
-Over the past 30 days, the number of AI-analyzed issues showed _(increase/decrease/stable)_ patterns. SAGE-AI achieved a significant success rate with automating repetitive queries, highlighting edge cases, and offering well`;
-        document.getElementById('community-content').innerHTML = `To analyze SAGE-AI's impact on community engagement, we'll evaluate the relevant aspects based on the provided data points as well as infer potential AI contributions in each area. The analysis assumes some typical contributions and effects AI might have in an open-source project environment.
+💡 **AI-analyzed issues:** `XX`  
+💬 **Total AI comments:** `YY`  
+⚡ **Average resolution time:** `ZZ hours`
+
+🏗️ **Repository Context Overview:**  
+- 🔓 **Total open issues:** `$(gh issue list --state open --json number | jq length)`  
+- 🔄 **Total open PRs:** `$(gh pr list --state open --json number | jq length)`  
+- 🔖 **Recent commits:** `$(git log --oneline --since="7 days ago" | wc -l)`  
+
+---
+
+### 📈 Trends & Insights
+
+📊 **AI Issue Analysis Trends:**  
+Over the last 30 days, S`;
+        document.getElementById('community-content').innerHTML = `To analyze SAGE-AI's impact on community engagement, let's break down each component based on the metrics you've provided and explore potential areas where AI could improve or already enhance community interactions.
 
 ### 🌟 New Contributor Onboarding
 
-**Impact of AI:**
-AI can play a crucial role in onboarding new contributors by:
+**Analysis:**
+The script retrieves the number of unique contributors who have made changes in the last 30 days. An AI system like SAGE-AI can significantly aid new contributor onboarding by offering automated assistance and guidance during the initial stages of code contribution. AI can provide:
 
-- **Guidance and Support**: Automated onboarding processes using chatbots or AI-driven tutorials can offer new contributors step-by-step guidance on making their first contributions, such as issue reporting or submitting a pull request (PR).
-  
-- **Auto-Responses**: AI can assist in answering common questions, helping contributors find the information they need faster, which reduces frustration and dropout rates.
-  
-- **Customized Suggestions**: AI systems might recommend tasks that match a new contributor's skills or interests, thereby increasing initial engagement and easing the transition into the project.
+- **Automated Code Review Suggestions**: Help new contributors by offering suggestions on coding standards and best practices.
+- **Interactive Tutorials**: Use AI-driven interactive tutorials to guide new users through the process of contributing, making it easier to understand and meet the project's requirements.
+- **Community Mentoring**: Facilitate connections between new contributors and experienced members via AI recommendation systems, ensuring they receive the guidance necessary to adjust quickly.
 
-**Overall Effect**: The number of new contributors onboard`;
-        document.getElementById('technical-content').innerHTML = `Based on the provided data and the indicators, here's a technical health assessment for the repository using SAGE-AI:
+### 💬 Communication Quality
+
+**Analysis:**
+The`;
+        document.getElementById('technical-content').innerHTML = `Based on the provided data and context, here's a technical health assessment for the repository using SAGE-AI:
 
 ## 🔧 Technical Health Report
 
 ### 🏗️ Build System Stability
 **AI Impact on Build Reliability:**
-- **Successful Builds:** $(git log --since="7 days ago" --oneline | wc -l) builds in the last 7 days.
-- **Build Reliability:** SAGE-AI can analyze the build logs to identify patterns and anomalies that might indicate build system instability. It can suggest optimizations and improvements to the build process to ensure more reliable and faster builds.
-- **Predictive Maintenance:** AI can predict potential build failures based on historical data and current changes, allowing for proactive maintenance and issue resolution.
+SAGE-AI can significantly enhance build system stability by:
+- **Automated Testing:** Continuously running tests on different architectures (i386, x86_64, ARM64, RISC-V) to catch issues early.
+- **Predictive Analytics:** Identifying potential build failures before they occur by analyzing commit patterns and historical data.
+- **Issue Triaging:** Prioritizing and addressing build failures more efficiently by leveraging AI-driven insights.
+
+**Recommendations:**
+- Implement automated testing pipelines for all supported architectures.
+- Use AI to analyze build logs and predict potential issues.
+- Set up alerts for build failures and use AI to triage and resolve them quickly.
 
 ### 🐛 Bug Detection & Resolution
-**How AI Helps Identify and Fix Issues:**
-- **Recent Bug Fixes:** $(git log --since="30 days ago" --grep="fix"`;
+**`;
     </script>
 </body>
 </html>
