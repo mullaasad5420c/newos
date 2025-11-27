@@ -13,45 +13,44 @@
 
 ## 📈 Performance Analytics
 
-Certainly! Below is a comprehensive **SAGE-AI Performance Analytics Report** template based on the inputs you've provided. This report assumes real data gathered via the specified CLI commands (marked as placeholders where you’ll input actual data). The report includes detailed KPIs, trends, insights, and recommendations, along with an engaging structure.
+Below is a detailed and enhanced **SAGE-AI Performance Analytics Report** template filled with all the requested sections. Please ensure you replace the placeholder values with the actual metrics before finalizing the report!
 
 ---
 
-# 📊 **SAGE-AI Performance Dashboard**
+# 📊 SAGE-AI Performance Analytics Dashboard
 
-## 🎯 **Key Performance Indicators (Last 30 Days)**
+## 🚀 Monthly Overview  
+> Timeframe: **Last 30 Days**
 
-- **AI-analyzed issues:** *[INSERT NUMBER]*  
-  *(Issues processed or categorized by AI for resolution assistance.)*
+- **AI-analyzed issues:** `X`  
+- **Total AI comments:** `Y`  
+- **Average resolution time:** `Z hours`
 
-- **Total AI comments:** *[INSERT NUMBER]*  
-  *(AI-generated comments directly contributing to issue discussions or PR reviews.)*
-
-- **Average resolution time:** *[INSERT HOURS]* hours  
-  *(Time taken on average to resolve issues where AI provided assistance.)*
+### 📦 Repository Statistics (Current Snapshot)
+- **Open Issues:** `$(gh issue list --state open --json number | jq length)`  
+- **Open PRs:** `$(gh pr list --state open --json number | jq length)`  
+- **Recent Commits (Last 7 Days):** `$(git log --oneline --since="7 days ago" | wc -l)`
 
 ---
 
-## 📈 **Trends & Insights**
+## 🎯 Key Performance Indicators (KPI)
 
-### 🔍 **Analysis of Key Metrics**
-1. **Steady Growth in AI Adoption
+**SAGE-AI's
 
 ## 👥 Community Engagement
 
-To analyze SAGE-AI's impact on community engagement, we'll consider each component based on the provided metrics and potential AI functionalities. Here's a detailed breakdown:
-
-## 👥 Community Engagement Report
+To provide a thorough analysis of SAGE-AI's impact on community engagement, let's break down each component of the community engagement report based on the recent activity data points you've shared.
 
 ### 🌟 New Contributor Onboarding
-**AI's Role in Onboarding:**
 
-SAGE-AI can significantly enhance the onboarding experience for new contributors by:
+**Analysis:**
+- **AI Assistance:** SAGE-AI can streamline the onboarding process for new contributors by providing clear guidance and automated responses to frequently asked questions. This can help new members navigate the project more easily, understand the contribution guidelines, and set up their development environments.
+- **Impact:** The use of AI in onboarding can reduce the time it takes for new contributors to become productive, leading to a higher retention rate of new members as indicated by the number of new contributors over the last 30 days.
 
-- **Personalized Guidance**: AI can offer tailored recommendations and tutorials to new participants, helping them navigate the project structure, codebase, and contribution guidelines.
-- **Automated Onboarding Tasks**: By using AI to automate repetitive setup tasks and provide immediate feedback, new contributors can get up and running faster.
-- **Mentorship Matching**: AI algorithms can connect new contributors with experienced mentors based on interests and expertise, fostering a supportive learning environment.
-- **Success Metrics**: The number of new contributors, "New contributors: $(git log --since="30 days ago" --format="%an" | sort -u | wc
+### 💬 Communication Quality
+
+**Analysis:**
+- **AI Impact:** SAGE-AI can enhance the quality of communication in issue and PR discussions by summarizing long threads, suggesting relevant documentation, and answering technical questions. This can help
 
 ## 🔧 Technical Health
 
@@ -61,9 +60,12 @@ Based on the provided data and context, here's a technical health assessment of 
 
 ### 🏗️ Build System Stability
 **AI Impact on Build Reliability:**
-- **Successful Builds:** The command `$(git log --since="7 days ago" --oneline | wc -l)` indicates the number of successful builds in the last week. SAGE-AI can analyze this data to identify patterns and anomalies in build failures. By predicting potential build issues, SAGE-AI can help in proactively addressing them, thus improving build reliability.
-- **Predictive Maintenance:** SAGE-AI can monitor the build logs and identify trends that might lead to future build failures. For example, if a specific commit or set of changes frequently causes builds to fail, SAGE-AI can flag these for review before they are merged.
-- **Automated Testing:** SAGE-AI
+- **Positive Impact:** SAGE-AI can help identify patterns in build failures by analyzing commit histories, test results, and build logs. It can suggest optimizations in the build system to improve reliability.
+- **Suggestions:** Implement automated tests that run on every commit to catch build issues early. Use SAGE-AI to analyze test results and provide insights into frequent failure points. Consider using SAGE-AI to predict potential build issues based on historical data.
+
+### 🐛 Bug Detection & Resolution
+**How AI Helps Identify and Fix Issues:**
+- **Bug Detection:** SAGE-AI can analyze commit messages, code changes, and issue reports to predict potential bugs. It can also help in identifying code smells and
 
 ---
 
