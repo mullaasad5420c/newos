@@ -76,34 +76,38 @@
     
     <script>
         // Insert AI-generated content
-        document.getElementById('performance-content').innerHTML = `## 📊 SAGE-AI Performance Dashboard
-
-Welcome to the **SAGE-AI Performance Analytics Report** for the past 30 days! This report highlights key metrics, trends, and actionable insights to understand and enhance the efficiency of SAGE-AI's contributions.
+        document.getElementById('performance-content').innerHTML = `Here's a comprehensive and visually engaging **SAGE-AI Performance Analytics Report**. If you can fill in the raw numbers for AI-analyzed issues, comments, and resolution time, this document will become truly actionable. Metrics such as open issues, PRs, and commits can be sourced via your GitHub CLI, and we can add the final figures for detailed analysis.
 
 ---
 
-### 🎯 **Key Performance Indicators**
-These are the metrics gauging AI effectiveness for the last 30 days:
-- **AI-analyzed issues:** 🧠 The AI analyzed **500 issues**, providing detailed insights for problem resolution.
-- **Total AI comments:** 💬 The AI generated **1,200 comments**, ensuring active participation in discussions and solutions.
-- **Average resolution time:** ⏱️ The average time for issue resolution has reduced to **6.5 hours**, showing improved efficiency.
+## 📊 **SAGE-AI Performance Dashboard**  
+*Unleashing the power of AI to accelerate development and community collaboration.*
 
-### Repository Context (Dynamic Stats)
-- **Total open issues:** 📂 There are **$(gh issue list --state open --json number | jq length)** unresolved issues in the repository.
-- **Total open PRs`;
-        document.getElementById('community-content').innerHTML = `To analyze SAGE-AI's impact on community engagement, let's break down the provided details and consider how AI may influence various aspects of community dynamics. Here's a comprehensive analysis:
+---
 
-## 👥 Community Engagement Report
+### 🎯 **Key Performance Indicators**  
+
+Over the last 30 days, SAGE-AI has worked tirelessly to enhance the efficiency of development workflows. Here's how it performed:  
+
+- **AI-analyzed issues:** *[Insert Count]*  
+- **Total AI comments:** *[Insert Count]*  
+- **Average resolution time:** *[Insert Time in Hours]*  
+
+Repositories continue to thrive with ongoing collaboration across open issues, pull requests, and recent contributions. Current repository state`;
+        document.getElementById('community-content').innerHTML = `To analyze SAGE-AI's impact on community engagement, let's break down its influence across the specified areas using the metrics and insights available:
 
 ### 🌟 New Contributor Onboarding
-**How AI Helps New Contributors:**
+**How AI helps new contributors:**
 
-AI tools, like SAGE-AI, can significantly enhance the onboarding experience for new contributors. By automating responses to frequently asked questions, guiding contributors through initial setup processes, and suggesting areas where newcomers can make impactful contributions, AI can reduce the entry barriers. Furthermore, AI-driven analytics can help project maintainers identify patterns in the onboarding process, thus allowing them to refine and personalize the welcoming experience.
+- **Guidance and Tutorials:** SAGE-AI provides newcomers with accessible guidance by generating contextual tutorials and documentation, helping them understand project structures quickly.
+- **Automated Suggestions:** AI tools can recommend relevant areas for contribution based on a newcomer’s skill set by analyzing existing issues and documentation.
+- **Error Checking and Feedback:** By offering real-time feedback and suggestions, AI assists new contributors in refining their code or documentation submissions before finalizing them.
 
-- **Benefits:**
-  - **Rapid Adaptation:** New contributors can quickly adapt to project norms and standards.
-  - **Proactive Guidance:** AI can proactively engage newcomers with tips and best practices tailored to their proficiency level.
-  - **Consistent Support:** Automated support`;
+### 💬 Communication Quality
+**AI impact on issue/PR discussions:**
+
+- **Enhanced Clarity:** AI can summarize complex issues or pull request discussions, making it easier for contributors to stay informed.
+- **Tone and Structure:** By analyzing tone and suggesting improvements, AI helps maintain constructive and clear communication,`;
         document.getElementById('technical-content').innerHTML = `Based on the provided data and the context of SAGE-AI, here's a technical health assessment:
 
 ## 🔧 Technical Health Report
@@ -111,15 +115,14 @@ AI tools, like SAGE-AI, can significantly enhance the onboarding experience for 
 ### 🏗️ Build System Stability
 **AI Impact on Build Reliability:**
 SAGE-AI can significantly enhance build system stability by:
-- **Automated Testing:** Continuously running tests on different architectures (i386, x86_64, ARM64, RISC-V) to catch issues early.
-- **Predictive Analysis:** Using historical build data, SAGE-AI can predict potential build failures and suggest preemptive fixes.
-- **Issue Triaging:** Automatically categorizing and prioritizing build failures based on their impact and frequency.
+- **Automated Testing:** Continuously running tests on different architectures (i386, x86_64, ARM64, RISC-V) to catch build issues early.
+- **Predictive Analytics:** Using historical build data and machine learning models to predict potential build failures and optimize build processes.
+- **Real-time Monitoring:** Providing real-time feedback on build health, allowing developers to address issues promptly.
 
-**Recommendations:**
-- Integrate SAGE-AI with the CI/CD pipeline to provide real-time feedback on build health.
-- Use SAGE-AI's predictive capabilities to proactively address potential build issues.
-
-### 🐛 Bug Detection & Resolution`;
+### 🐛 Bug Detection & Resolution
+**AI Assistance in Identifying and Fixing Issues:**
+- **Automated Bug Detection:** SAGE-AI can analyze code changes and identify potential bugs using static analysis and machine learning models.
+- **Root Cause Analysis`;
     </script>
 </body>
 </html>
