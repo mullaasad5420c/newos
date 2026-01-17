@@ -76,48 +76,51 @@
     
     <script>
         // Insert AI-generated content
-        document.getElementById('performance-content').innerHTML = `Here's a detailed and visually engaging performance analytics report based on your request. You can input the actual numbers into placeholders like `{value}` that I've left for metrics pending data.
+        document.getElementById('performance-content').innerHTML = `Certainly! Below is a comprehensive SAGE-AI Performance Analytics Report based on the data points you provided. Note that the placeholders such as `$(gh issue list ... | jq length)` would need to be replaced with actual computed values from your APIs/CLI commands.
 
 ---
 
-# 📊 SAGE-AI Performance Dashboard
+## 📊 SAGE-AI Performance Dashboard
 
-Welcome to the **SAGE-AI Performance Analytics Report** for the past 30 days! Below is an analysis of how SAGE-AI has been performing in analyzing issues, offering solutions, and supporting the community. 
+### 🎯 **Key Performance Indicators (KPIs)**
+
+- **AI-analyzed Issues:** `XX`
+- **Total AI Comments:** `XX`
+- **Average Resolution Time:** `XX hours`
 
 ---
 
-## 🎯 Key Performance Indicators
+### 📊 **Repository Context**
 
-| 📌 Metric                | 📊 Value           |
-|--------------------------|:------------------:|
-| **AI-Analyzed Issues**   | {value_issues}     |
-| **Total AI Comments**    | {value_comments}   |
-| **Average Resolution Time** 🕒 | {value_time} hours |
-| **Total Open Issues**    | **$(gh issue list --state open --json number | jq length)**  |
-| **Total Open PRs**        | **`;
-        document.getElementById('community-content').innerHTML = `To analyze SAGE-AI's impact on community engagement, let's delve into each section using available data and general insights into AI's role in software development communities.
+- **Total Open Issues:** `$(gh issue list --state open --json number | jq length)`  
+- **Total Open PRs:** `$(gh pr list --state open --json number | jq length)`  
+- **Recent Commits (Last 7 days):** `$(git log --oneline --since="7 days ago" | wc -l)`
+
+> 🔍 These metrics reflect the repository's current`;
+        document.getElementById('community-content').innerHTML = `To provide a comprehensive analysis of SAGE-AI's impact on community engagement, we'll examine several areas where AI can influence participation, communication, and collaboration. We'll also consider the quantitative data you've provided from recent activity.
 
 ### 🌟 New Contributor Onboarding
-
-**How AI helps new contributors:**
-SAGE-AI can significantly ease the onboarding process for new contributors by automating routine tasks such as code reviews, style checks, and documentation suggestions. This reduces the barrier to entry, enabling newcomers to focus on meaningful contributions without getting bogged down by initial technicalities. AI tools can guide new participants by suggesting relevant issues to tackle, provide contextual information about codebases, and ensure that their initial submissions adhere to community standards, all of which help them integrate seamlessly into the project.
+**AI Impact:**
+- **Simplification and Guidance:** AI can streamline the onboarding process for new contributors by providing automated responses to frequently asked questions, tutorials, and documentation. Concise and tailored suggestions can help newcomers understand the project structure and contribution guidelines quickly.
+- **Personalized Onboarding Experience:** Machine learning algorithms can analyze individual onboarding patterns and provide personalized recommendations, making the process more welcoming and less intimidating for new members.
 
 ### 💬 Communication Quality
-
-**AI impact on issue/PR discussions:**
-AI enhances the quality of communication in issues and pull requests by providing context-aware suggestions, summarizing lengthy threads for better comprehension, and identifying missing information necessary for resolution. By suggesting relevant references`;
-        document.getElementById('technical-content').innerHTML = `Based on the provided data and context, here's a technical health assessment for the repository using SAGE-AI:
+**AI Impact:**
+- **Enhanced Clarity:** By analyzing the content of issue comments and PR discussions, AI can suggest more precise language and responses, ensuring clarity and reducing misunderstandings.
+- **Facilitation:** AI can help prioritize and triage`;
+        document.getElementById('technical-content').innerHTML = `Based on the provided data and the indicators, here's a technical health assessment for the repository using SAGE-AI:
 
 ## 🔧 Technical Health Report
 
 ### 🏗️ Build System Stability
 **AI Impact on Build Reliability:**
-- **Positive Impact:** SAGE-AI can analyze commit messages and changes to predict potential build issues. For example, if a commit message indicates a significant change in a critical dependency, SAGE-AI can trigger additional tests to ensure the build remains stable.
-- **Recommendations:** Implement AI-driven pre-commit hooks to run quick checks on code changes that are likely to affect the build. Use SAGE-AI to monitor build logs and identify recurring issues.
+- **Successful Builds:** $(git log --since="7 days ago" --oneline | wc -l) builds in the last 7 days.
+- **Build Reliability:** SAGE-AI can analyze the build logs and identify patterns that lead to successful or failed builds. It can suggest optimizations to improve build reliability, such as identifying dependencies that frequently cause build failures or recommending changes to the build configuration.
+- **Predictive Maintenance:** AI can predict potential build issues based on historical data and current changes, allowing for proactive maintenance.
 
 ### 🐛 Bug Detection & Resolution
-**How AI Helps Identify and Fix Issues:**
-- **Bug Detection:** SAGE-AI can analyze commit history, code changes, and issue reports to identify patterns and potential bugs. For instance, if a specific function is frequently changed`;
+**AI Assistance in Identifying and Fixing Issues:**
+- **Recent Bug Fixes:** $(git log --since="30 days ago"`;
     </script>
 </body>
 </html>
