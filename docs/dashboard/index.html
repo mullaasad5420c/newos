@@ -76,59 +76,53 @@
     
     <script>
         // Insert AI-generated content
-        document.getElementById('performance-content').innerHTML = `Here is the comprehensive SAGE-AI performance analytics report, designed to be data-driven and visually appealing while integrating your requested metrics.
+        document.getElementById('performance-content').innerHTML = `Below is a mock-up of a "SAGE-AI Performance Analytics Report." I've also used placeholders for actual metrics where data is dependent on computation (e.g., using `gh` and `git` CLI tools). Once you gather those statistics, you can replace the placeholders.
 
 ---
 
-## 📊 **SAGE-AI Performance Dashboard**  
-Analyzing SAGE-AI's impact in the last 30 days to optimize efficiency and development velocity.
+# 📊 **SAGE-AI Performance Dashboard**  
+*Last 30 Days Report*
 
 ---
 
-### 🎯 **Key Performance Indicators**  
-**AI Metrics Summary (Last 30 Days)**:  
-- **AI-analyzed issues**: 320  
-- **Total AI comments**: 450  
-- **Average resolution time**: 7.6 hours  
+## 🎯 **Key Performance Indicators**
 
-Performance analysis shows AI's robust involvement in identifying, commenting, and accelerating issue resolution.
+### Overview of AI Activities:
+- **AI-analyzed issues:** 📋 `INSERT_METRIC`
+- **Total AI-generated comments:** 💬 `INSERT_METRIC`
+- **Average resolution time:** ⏱ `INSERT_METRIC` hours  
 
 ---
 
-### 📈 **Trends & Insights**  
-📊 **Open Issues**:
-- **Total open issues**: $(gh issue list --state open --json number | jq length)
-- AI has successfully analyzed the majority of issues, facilitating rapid responses from maintainers.  
-
-📊 **Open Pull Requests (PRs)**`;
-        document.getElementById('community-content').innerHTML = `To analyze SAGE-AI's impact on community engagement, we can break down each section using the provided metrics and insight on potential AI interactions.
+### **Repository Context:**
+- **Total open issues:** 🪲 $(gh issue list --state open --json number | jq length)
+- **Total open PRs:** 🔀 $(gh pr list --state open --json number | jq length)
+- **Recent commits (Last 7 days):**`;
+        document.getElementById('community-content').innerHTML = `To analyze SAGE-AI's impact on community engagement, we need to evaluate the activities outlined in the recent activity section and relate them to potential improvements SAGE-AI might bring. Here’s a structured analysis:
 
 ### 🌟 New Contributor Onboarding
-
-*AI Integration in Onboarding New Contributors:*
-
-- **Automated Guidance**: SAGE-AI can provide personalized guidance documents and FAQs to new contributors right after they join a project, making the onboarding process smoother.
-- **Intelligent Recommendations**: By analyzing past contributions, SAGE-AI could recommend tasks suitable for new contributors, boosting their confidence and easing their integration.
-- **Real-time Assistance**: During the initial learning phase, AI chatbots can handle frequently asked questions and direct new contributors to relevant resources or community experts.
-  
-In essence, AI accelerates the onboarding of new contributors by personalizing their initial interactions and providing timely, relevant support, reflected in the number of new contributors.
+AI can greatly enhance new contributor onboarding by providing automated responses to common questions and linking new users with necessary documentation or onboarding materials. By analyzing new committers' activity, such as their number in the last 30 days, SAGE-AI can identify trends or common hurdles faced by newbies and suggest optimized guides or tutorials. For instance, AI-powered chatbots can interact with contributors directly to help them navigate the contribution process more smoothly.
 
 ### 💬 Communication Quality
-
-*AI Impact on Issue/PR Discussions:*
-
-- **Enhanced Clarity`;
-        document.getElementById('technical-content').innerHTML = `Based on the provided data and context, here's a technical health assessment of the repository using SAGE-AI:
+AI technologies improve communication quality by ensuring clarity and providing context in discussions. In SAGE-AI's context, AI can analyze text from issues and Pull Requests (PRs) to suggest improvements or detect conflicts early. Tools like natural language processing can summarize long threads or`;
+        document.getElementById('technical-content').innerHTML = `Based on the provided data and context, here's a technical health assessment for the repository using SAGE-AI:
 
 ## 🔧 Technical Health Report
 
 ### 🏗️ Build System Stability
 **AI Impact on Build Reliability:**
-SAGE-AI can significantly enhance build system stability by analyzing commit history, identifying patterns in successful and failed builds, and providing insights into potential issues. Here are some ways AI can help:
+SAGE-AI can significantly enhance build system stability by:
+- **Automated Testing:** AI can analyze commit history and identify patterns that lead to build failures. It can then suggest preemptive fixes or changes to the build configuration.
+- **Continuous Integration:** AI-driven CI systems can quickly identify and report build issues, reducing the time between a code change and a build failure.
+- **Predictive Maintenance:** By analyzing historical data, AI can predict potential build issues before they occur, allowing for proactive maintenance.
 
-- **Predictive Analysis:** AI can predict which commits are likely to cause build failures based on historical data. This allows developers to catch and fix issues early in the development cycle.
-- **Automated Testing:** AI can suggest and implement automated tests for different architectures (i386, x86_64, ARM64, RISC-V) to ensure builds are reliable across all supported platforms.
-- **Continuous Integration:** AI can optimize the CI pipeline, reducing build times and increasing reliability by prioritizing and parallelizing tasks based on`;
+**Recommendations:**
+- Implement AI-driven CI/CD pipelines.
+- Use AI to analyze build logs and suggest optimizations.
+- Set up automated testing to catch build issues early.
+
+### 🐛 Bug Detection & Resolution
+**AI`;
     </script>
 </body>
 </html>
