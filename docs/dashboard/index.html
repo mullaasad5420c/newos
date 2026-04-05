@@ -76,57 +76,51 @@
     
     <script>
         // Insert AI-generated content
-        document.getElementById('performance-content').innerHTML = `To generate this comprehensive SAGE-AI performance analytics report, I'll provide an example of what an actionable and visually engaging report might look like based on the placeholder metrics and trends. Once you replace the placeholders with the real-time values from your inputs, the report becomes fully data-driven.
+        document.getElementById('performance-content').innerHTML = `Below is an example of the **SAGE-AI Performance Analytics Report** that follows the structure you provided. Note that placeholders are used where actual data from commands such as `$(gh issue list --state open --json number | jq length)`, `$(gh pr list --state open --json number | jq length)` and `$(git log --oneline --since="7 days ago" | wc -l)` would go. You'll need to replace these placeholders with the actual extracted values.
 
 ---
 
-# 📊 SAGE-AI Performance Dashboard
+## 📊 **SAGE-AI Performance Dashboard**
 
-### **Reporting Period:** Last 30 Days  
-**Date Range:** _(Insert the start and end dates here)_
+### 🎯 **Key Performance Indicators**
 
----
-
-## 🎯 **Key Performance Indicators** (KPIs)
-
-- 🔍 **AI-analyzed issues:** **X**  
-  _(Number of issues analyzed by the AI over the last 30 days)_
-
-- 💬 **Total AI comments:** **Y**  
-  _(Total suggestions or interventions made by the AI)_
-
-- ⏳ **Average resolution time:** **Z hours**  
-  _(Time taken to resolve issues analyzed by AI, on average)_
-
----
-
-## 📈 **Trends & Insights**
-
-➡ **Trend`;
-        document.getElementById('community-content').innerHTML = `To effectively analyze SAGE-AI's impact on community engagement, let's address each section with relevant insights based on the provided data and functions.
+| **Metric**                   | **Value**         |
+|-------------------------------|-------------------|
+| AI-analyzed issues            | `XXX`            |
+| Total AI comments             | `XXX`            |
+| Average resolution time       | `XXX hours`      |
+| Total open issues             | `$(gh issue list --state open --json number | jq length)` |
+| Total open PRs`;
+        document.getElementById('community-content').innerHTML = `To provide a comprehensive analysis of SAGE-AI's impact on community engagement based on the data you provided, we will break down each aspect mentioned in your report:
 
 ### 🌟 New Contributor Onboarding
 
-**AI-Assisted Onboarding**:  
-SAGE-AI plays a pivotal role in streamlining the onboarding experience for new contributors. By leveraging AI, the project can offer personalized guidance and resources to newcomers, addressing common queries and providing templates for issue reporting and pull requests (PRs). This targeted assistance can make the process smoother and more welcoming, encouraging new contributors to participate actively. For instance, AI could automate responses to frequently asked questions or redirect contributors to relevant documentation, thereby reducing the friction newbies typically encounter.
+**How AI helps new contributors:**
+
+- **Reduced Entry Barrier**: AI can offer guidance to new contributors by providing templates, suggestions, or automating certain repetitive tasks. This lowers the barriers to entry by simplifying the contribution process, letting newcomers focus on substantive contributions faster.
+
+- **Personalized Assistance**: AI can help match new contributors with mentors and relevant resources tailored to their interests and skill levels, enhancing their onboarding experience.
+
+- **Immediate Feedback**: AI tools can run preliminary checks on code submissions, ensuring that basic conventions and syntax are adhered to, thus providing immediate feedback and learning opportunities for new contributors.
 
 ### 💬 Communication Quality
 
-**Enhancing Discussions with AI**:  
-AI can significantly improve the quality of communication within issue discussions and PR reviews. Tools like language models help maintain constructive and respectful dialogue by suggesting improvements or highlighting potentially unclear or ambiguous language. Additionally, AI can facilitate summarization of`;
-        document.getElementById('technical-content').innerHTML = `Based on the provided data and context, here's a technical assessment of the impact of SAGE-AI on the repository:
+**AI impact on issue/PR discussions:**
+
+- **Enhanced Clarity**: AI can help maintain clarity in issue and PR discussions by`;
+        document.getElementById('technical-content').innerHTML = `Based on the provided data and the indicators, here's a technical health assessment of the repository with the hypothetical impact of SAGE-AI:
 
 ## 🔧 Technical Health Report
 
 ### 🏗️ Build System Stability
 **AI Impact on Build Reliability:**
-- **Positive Impact:** SAGE-AI can analyze the commit history and identify patterns in successful builds. It can suggest optimizations to the build system to improve reliability. For example, it can recommend changes to the CI/CD pipeline to handle dependencies more efficiently or to parallelize build steps.
-- **Monitoring:** AI can continuously monitor the build logs and alert the team to any anomalies or potential issues before they cause a build failure.
-- **Predictive Maintenance:** By analyzing historical data, AI can predict when certain parts of the build system might need maintenance or updates to prevent future failures.
+- **Positive Impact:** SAGE-AI can analyze build logs and identify patterns in successful and failed builds. It can suggest optimizations to the build system to improve reliability. For example, it might recommend changes to the CI/CD pipeline to reduce flakiness.
+- **Indicators:** Successful builds in the last 7 days: $(git log --since="7 days ago" --oneline | wc -l). SAGE-AI can provide insights into why certain builds fail and suggest fixes.
+- **Recommendation:** Implement AI-driven build monitoring and analysis to proactively address build issues.
 
 ### 🐛 Bug Detection & Resolution
 **How AI Helps Identify and Fix Issues:**
-- **Automated Testing:** SAGE-A`;
+- **Positive`;
     </script>
 </body>
 </html>
