@@ -76,58 +76,53 @@
     
     <script>
         // Insert AI-generated content
-        document.getElementById('performance-content').innerHTML = `Sure! Below is a template for a **SAGE-AI performance analytics report**. You'll need to substitute the placeholders with actual data before finalizing it. For charts, you can either generate them using a tool like Excel, Google Sheets, or embed ASCII/Markdown-based charts if the platform supports it. 
+        document.getElementById('performance-content').innerHTML = `# 📊 SAGE-AI Performance Analytics Report (Last 30 Days)
 
 ---
 
-# 📊 **SAGE-AI Performance Dashboard**
+## 📊 **SAGE-AI Performance Dashboard**
 
-Welcome to the **SAGE-AI Analytics Report** for the last 30 days! This report provides a comprehensive view of the AI system’s contributions, impact, and areas for improvement.
+### 🎯 **Key Performance Indicators (KPIs)**
+Here are the highlights of SAGE-AI’s performance over the last 30 days:
+
+- **AI-Analyzed Issues:** [Insert number] 🧠  
+- **Total AI Comments Posted:** [Insert number] 💬  
+- **Average Resolution Time:** [Insert time in hours] ⌛  
+
+SAGE-AI has been designed to assist with issue analysis, reduce resolution time, and improve team productivity. These KPIs underscore its performance.
 
 ---
 
-## 🎯 **Key Performance Indicators** 
+## 📈 **Trends & Insights**
+Let’s dive into how SAGE-AI has evolved and influenced development activities:
 
-| **Metric**                           | **Value**            |
-|--------------------------------------|----------------------|
-| **AI-analyzed issues**               | *X* issues          |
-| **Total AI comments**                | *Y* comments        |
-| **Average resolution time**          | *Z* hours           |
-| **Issues resolved via AI suggestions** | *A* issues          |
-|`;
-        document.getElementById('community-content').innerHTML = `To analyze the impact of SAGE-AI on community engagement using the provided activity metrics, let's break down the components:
+- **Steadfast Usage:** There has been a steady increase in the number of AI-analyzed issues over time, showing higher adoption by the team.  
+- **Resolution Time Trends:** [Add trend observation`;
+        document.getElementById('community-content').innerHTML = `To analyze SAGE-AI's impact on community engagement, we'll break it down into sections based on the categories you've provided. While specific data from the commands are hypothetical here, we can outline what each analysis might look like and how SAGE-AI might contribute to each area.
 
 ### 🌟 New Contributor Onboarding
 
-**How AI helps new contributors:**
-
-AI tools, like SAGE-AI, can significantly streamline the onboarding process for new contributors by:
-- **Automated Guidance:** Offering step-by-step guidance and answering setup-related queries to reduce initial friction.
-- **Personalized Suggestions:** Providing tailored recommendations on beginner-friendly tasks based on contributor profiles and interests.
-- **Feedback Loops:** Quickly addressing common issues, making the transition smoother for new users.
-
-With a rapid increase in new contributors, it indicates that AI is effectively lowering barriers to entry, making it simpler for new developers to join and start contributing.
+**Analysis:**
+- **Current State:** The count of new contributors over the past 30 days provides insights into community growth. A growing number suggests effective onboarding processes.
+- **SAGE-AI's Role:** AI can facilitate new contributor onboarding by automating initial responses in open issues or pull requests, offering guidance, or suggesting beginner-friendly tasks. This reduces the barrier to entry, making newcomers feel welcome and informed about how to get started contributing and navigating the repository.
 
 ### 💬 Communication Quality
 
-**AI impact on issue/PR discussions:**
-
-AI can enhance communication quality in several ways:
-- **Clarification and Summarization:** AI provides clear and concise summaries of lengthy discussions, ensuring everyone`;
-        document.getElementById('technical-content').innerHTML = `Based on the provided data and context, here's a technical health assessment of the repository incorporating SAGE-AI:
+**Analysis:**
+- **Current State:** Issue participation, reflecting the number of people interacting in discussions, can indicate engagement quality. High participation numbers may suggest`;
+        document.getElementById('technical-content').innerHTML = `Based on the provided data and the indicators, here's a technical health assessment for the repository using SAGE-AI:
 
 ## 🔧 Technical Health Report
 
 ### 🏗️ Build System Stability
 **AI Impact on Build Reliability:**
-SAGE-AI can significantly enhance build system stability by:
-- **Automated Testing:** SAGE-AI can analyze commit history and identify patterns that lead to build failures. It can then suggest preemptive fixes or changes to the build configuration.
-- **Continuous Integration:** By integrating with CI/CD pipelines, SAGE-AI can trigger builds for every commit and provide real-time feedback on build health.
-- **Root Cause Analysis:** In case of build failures, SAGE-AI can perform root cause analysis to identify the exact cause and suggest fixes.
+- **Successful Builds:** $(git log --since="7 days ago" --oneline | wc -l) builds in the last 7 days.
+- **Build Reliability:** SAGE-AI can analyze the build logs and identify patterns that lead to successful or failed builds. It can suggest optimizations to improve build reliability, such as identifying dependencies that frequently cause build failures or recommending changes to the build configuration.
+- **Predictive Maintenance:** AI can predict potential build issues based on historical data and current changes, allowing for proactive maintenance.
 
-**Metrics:**
-- **Successful builds (last 7 days):** $(git log --since="7 days ago" --oneline | wc -l)
-- **Build failure rate:**`;
+### 🐛 Bug Detection & Resolution
+**How AI Helps Identify and Fix Issues:**
+- **Recent Bug Fixes:** $(git log --since="30 days ago"`;
     </script>
 </body>
 </html>
