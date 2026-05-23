@@ -76,52 +76,54 @@
     
     <script>
         // Insert AI-generated content
-        document.getElementById('performance-content').innerHTML = `Here’s a generated comprehensive SAGE-AI performance analytics report structure, based on the provided template. Fill in the placeholders with the respective values once the data is gathered from your system.
+        document.getElementById('performance-content').innerHTML = `# 📊 SAGE-AI Performance Analytics Report (Last 30 Days)
 
 ---
 
-# 📊 **SAGE-AI Performance Dashboard** (Last 30 Days)
+## 📊 SAGE-AI Performance Dashboard
+
+Welcome to the performance analytics report for **SAGE-AI**. Over the past 30 days, the AI system has been actively contributing to your project, analyzing issues, generating helpful comments, and driving resolutions toward an efficient development workflow. Below is an overview of the key performance metrics, insights, and recommendations to further enhance SAGE-AI's performance.
 
 ---
 
 ### 🎯 **Key Performance Indicators**
-| Metric                        | Value                      |
-| ----------------------------- | -------------------------- |
-| **AI-Analyzed Issues**        | [Enter count]              |
-| **Total AI Comments**         | [Enter count]              |
-| **Average Resolution Time**   | [Enter hours]              |
 
----
+| **Metric**               | **Value**                         |
+|--------------------------|-----------------------------------|
+| AI-analyzed issues        | _[Insert Metric]_               |
+| Total AI comments         | _[Insert Metric]_               |
+| Average resolution time   | _[Insert Metric]_ hours         |
+| Total open issues         | `$(gh issue list --state open --json number | jq length)` |
+| Total open PRs            | `$(gh pr`;
+        document.getElementById('community-content').innerHTML = `To analyze the impact of SAGE-AI on community engagement, we will delve into the components provided:
 
-### 📈 **Trends & Insights**
+### 🌟 New Contributor Onboarding
 
-- **Issues Analyzed Growth**: The number of issues analyzed by SAGE-AI has [increased/decreased] by [X%] compared to the previous month.
-- **Resolution Achievement**: On average, SAGE-AI has helped in reducing resolution times to **[X hours]**, indicating [improved/decl`;
-        document.getElementById('community-content').innerHTML = `To analyze SAGE-AI's impact on community engagement, we can break down and interpret the recent activity data and discuss how AI contributes to each aspect of community interaction.
-
-### 👥 Community Engagement Report
-
-#### 🌟 New Contributor Onboarding
 **How AI helps new contributors:**
-SAGE-AI likely plays a pivotal role in assisting new contributors by providing guidance on the project’s codebase and best practices. AI can automate responses to common questions, facilitate easier navigation through documentation, and even provide tips or best practices based on historical data. As of the recent activity, the number of new contributors within the last 30 days can be derived from the shell command provided, which outputs the count of unique authors in the Git log. An increase in this number can indicate that AI tools are effectively lowering the barrier to entry for new developers by offering on-demand help and clarifying complex processes.
+SAGE-AI can significantly ease the onboarding process for new contributors. By providing automated guidance and suggestions, it helps new members navigate the repository, understand project structure, and locate areas where they can contribute effectively. AI-driven tools can also highlight beginner-friendly issues or tasks, thus lowering the entry barrier and encouraging more contributions from newcomers.
 
-#### 💬 Communication Quality
+### 💬 Communication Quality
+
 **AI impact on issue/PR discussions:**
-AI can significantly enhance the`;
-        document.getElementById('technical-content').innerHTML = `Based on the provided data and the context of SAGE-AI, here's a technical health assessment:
+AI can enhance the quality of discussions by offering contextual insights and suggesting clarifications to posted comments and issues. This helps in reducing misunderstandings and improving overall communication. AI moderation can also help by identifying off-topic comments or non-constructive critiques, thereby maintaining focus and a positive atmosphere in discussions.
+
+### 🎓 Learning & Knowledge Sharing
+
+**Educational value of AI responses:**
+AI can`;
+        document.getElementById('technical-content').innerHTML = `Based on the provided data and the indicators, here's a technical assessment of the repository's health impact from using SAGE-AI:
 
 ## 🔧 Technical Health Report
 
 ### 🏗️ Build System Stability
 **AI Impact on Build Reliability:**
-SAGE-AI can significantly enhance build system stability by:
-- **Automated Testing:** AI can analyze commit history and identify patterns that lead to build failures. It can then suggest preemptive fixes or adjustments to the build system.
-- **Continuous Integration:** AI-driven CI systems can quickly identify and report build issues, reducing the time between a code change and a build failure.
-- **Predictive Maintenance:** AI can predict potential build issues based on historical data and current code changes, allowing for proactive maintenance.
+- **Positive Impact:** SAGE-AI can help identify patterns in build failures by analyzing commit histories and build logs. It can suggest optimizations and improvements to the build system to reduce failures.
+- **Recommendations:** Implement AI-driven build monitoring tools that can alert the team to potential issues before they cause widespread failures. Use SAGE-AI to analyze build logs and suggest fixes for recurring build errors.
 
 ### 🐛 Bug Detection & Resolution
 **How AI Helps Identify and Fix Issues:**
-- **Automated Bug Detection:** AI can analyze code changes and identify potential bugs or issues before they are introduced into the main codebase`;
+- **Bug Detection:** SAGE-AI can analyze commit messages and code changes to predict potential bugs. It can also use machine learning models to identify code smells and potential issues.
+- **Bug Resolution:** AI can suggest fixes`;
     </script>
 </body>
 </html>
