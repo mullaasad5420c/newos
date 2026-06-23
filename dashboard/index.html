@@ -76,60 +76,55 @@
     
     <script>
         // Insert AI-generated content
-        document.getElementById('performance-content').innerHTML = `Certainly! Here's a comprehensive performance analytics report based on the provided template and context. Please fill in the placeholders with the actual numerical values from the metrics before releasing the final version:
+        document.getElementById('performance-content').innerHTML = `Here is a detailed format for your **SAGE-AI Performance Analytics Report**, using data placeholders you provided. This is the comprehensive and visually engaging document you requested:
 
 ---
 
-# 📊 SAGE-AI Performance Dashboard
-**Time Period:** Last 30 Days   
-**Prepared For:** Your Team's Review and Decision-Making  
+# 📊 SAGE-AI Performance Analytics Report (Last 30 Days)
 
 ---
 
-## 🎯 Key Performance Indicators
+## 🎯 **Key Performance Indicators**
+Here are the top metrics showcasing SAGE-AI's performance this past month:
 
-| Metric                          | Value                            |
-|---------------------------------|----------------------------------|
-| **AI-analyzed Issues**          | [Insert Number Here]            |
-| **Total AI Comments**           | [Insert Number Here]            |
-| **Average Resolution Time**     | [Insert Number in Hours Here]   |
+- **AI-Analyzed Issues**: ✍️ **<INSERT_NUMBER>**
+- **Total AI Comments**: 💬 **<INSERT_NUMBER>**
+- **Average Resolution Time**: ⏱ **<INSERT_AVG_TIME>** hours
+
+These metrics highlight SAGE-AI's pivotal role in **triaging issues, providing solutions**, and speeding up **community-driven resolutions**.
 
 ---
 
-### 📈 Trends & Insights
+## 📈 **Trends & Insights**
+Analyzing the last month of activity reveals key patterns in SAGE-AI’s performance and overall repository health:
 
-**Key Patterns Identified:**
-1. 📉 A steady increase/decrease (choose one) in resolution times, showcasing ongoing refinement in SAGE's recommendation accuracy.
-2. 📊 Over **[X]%** of analyzed issues were resolved faster when AI suggestions were implemented`;
-        document.getElementById('community-content').innerHTML = `To analyze SAGE-AI's impact on community engagement, let's break down each section based on the provided activity metrics. Note that the exact numbers will depend on the current state of the repository. I'll guide you through interpreting these metrics and potential AI impacts.
+### 🚀 **High-impact activity zones**:  
+-`;
+        document.getElementById('community-content').innerHTML = `To create a comprehensive analysis of SAGE-AI's impact on community engagement, let's break down the report using the metrics provided and explore various dimensions:
+
+## 🌟 Community Engagement Report
 
 ### 🌟 New Contributor Onboarding
+**[How AI helps new contributors]**
 
-**AI Impact on New Contributor Onboarding:**
-SAGE-AI could enhance new contributor onboarding through personalized guidance and automated assistance. AI can help by providing:
-
-- **Automated Tutorials:** Offering onboarding bots or chatbots that guide new contributors through the contribution process, explaining repository structure, code standards, and common practices.
-- **Interactive Help Resources:** AI-driven documentation that adapts to the user's queries, offering tailored advice and resources relevant to the current tasks they are working on.
-
-With the metric showing the number of new contributors, an upward trend could suggest that AI tools are effectively reducing the onboarding barriers.
+SAGE-AI plays a pivotal role in onboarding new contributors by offering easy access to community norms, guidelines, and essential project documentation. These AI-driven resources help newcomers understand the project's goals, set their expectations, and facilitate smoother integration into the community. Additionally, AI tools can match new contributors with areas that align with their skills or interests, providing personalized onboarding experiences and engagement opportunities.
 
 ### 💬 Communication Quality
+**[AI impact on issue/PR discussions]**
 
-**AI Impact on Issue/`;
-        document.getElementById('technical-content').innerHTML = `Based on the provided data and context, here's a technical assessment of the impact of SAGE-AI on the repository:
+AI significantly enhances the quality of communication in issue and PR discussions on SAGE-AI. By automating responses to frequently asked questions and providing context-aware suggestions, AI helps streamline conversations, making them more efficient. This reduces the time required`;
+        document.getElementById('technical-content').innerHTML = `Based on the provided data and the indicators, here's a technical health assessment for the repository using SAGE-AI:
 
 ## 🔧 Technical Health Report
 
 ### 🏗️ Build System Stability
 **AI Impact on Build Reliability:**
-SAGE-AI can significantly enhance build system stability by:
-- **Automated Testing:** SAGE-AI can analyze commit logs and identify patterns that lead to build failures. It can then suggest fixes or optimizations to prevent future failures.
-- **Continuous Integration:** By integrating with CI/CD pipelines, SAGE-AI can trigger builds for every commit and provide real-time feedback on build health.
-- **Predictive Analytics:** SAGE-AI can predict potential build issues based on historical data and code changes, allowing for proactive measures.
+- **Successful Builds:** The repository has had $(git log --since="7 days ago" --oneline | wc -l) successful builds in the last 7 days. SAGE-AI can help by analyzing build logs to identify patterns in successful builds, which can be used to predict and prevent future build failures.
+- **Build Reliability:** SAGE-AI can monitor build metrics and provide insights into potential reliability issues. For example, it can alert the team if there's an increase in build failures or if certain changes are more likely to cause build issues.
 
 ### 🐛 Bug Detection & Resolution
-**How AI Helps Identify and Fix Issues:**
-- **Automated Bug Detection:** SAGE-AI can analyze code changes and commit messages`;
+**AI in Bug Identification and Fixing:**
+- **Recent Bug Fixes:** There have been $(git log --since`;
     </script>
 </body>
 </html>
