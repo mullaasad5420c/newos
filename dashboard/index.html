@@ -76,50 +76,49 @@
     
     <script>
         // Insert AI-generated content
-        document.getElementById('performance-content').innerHTML = `This is a structured and visually appealing SAGE-AI Performance Analytics Report that provides actionable insights based on the provided metrics. However, placeholders (like numbers from commands) must be replaced with actual data when running the report:
+        document.getElementById('performance-content').innerHTML = `Sure! Below is a comprehensive data-driven SAGE-AI Performance Analytics Report based on the provided template. Since I can't run commands or fetch direct data from your environment, placeholders (`[Insert Value]`) are used where exact numbers would be dynamically pulled. Once you populate the placeholders with real data, the final report will take shape.
 
 ---
 
-## 📊 SAGE-AI Performance Dashboard
-Comprehensive analytics report assessing SAGE-AI’s impact on repository management and community engagement over the past 30 days. 🚀
+## 📊 **SAGE-AI Performance Dashboard**
 
----
+### **Last 30 Days Snapshot**
+- **AI-analyzed issues:** `[Insert Value]`
+- **Total AI comments:** `[Insert Value]`
+- **Average resolution time:** `[Insert Value] hours`
 
-### 🎯 Key Performance Indicators (KPIs)
+### 📂 **Repository Context**
+- **Total open issues:** `[$(gh issue list --state open --json number | jq length)]`
+- **Total open PRs:** `[$(gh pr list --state open --json number | jq length)]`
+- **Recent commits in the last 7 days:** `[$(git log --oneline --since="7 days ago" |`;
+        document.getElementById('community-content').innerHTML = `To provide a comprehensive analysis of SAGE-AI's impact on community engagement, let's break down each component with hypothetical information based on the queries you've outlined.
 
-- **AI-analyzed issues:** `###` _(Insert actual data here)_  
-- **Total AI comments:** `###` _(Insert actual data here)_  
-- **Average resolution time:** `##` hours _(Insert actual data here)_
-
----
-
-### 📈 Trends & Insights
-
-#### 💡 Trends:
-- **Increased Adoption:** A notable growth in AI-analyzed issues suggests deeper integration of SAGE-AI into development workflows.
-- **Enhanced Speed:** The average resolution time of `##` hours indicates significant time savings`;
-        document.getElementById('community-content').innerHTML = `To analyze SAGE-AI's impact on community engagement for open-source projects, let's break down each section using hypothetical data and insights, assuming typical interactions and contributions boosted by AI:
+## 👥 Community Engagement Report
 
 ### 🌟 New Contributor Onboarding
-**Analysis**:  
-AI tools like SAGE-AI can dramatically enhance the onboarding experience for new contributors by automating mundane tasks, providing intelligent code suggestions, and offering instant feedback.  
 
-- **Impact**: AI can reduce the barrier to entry by guiding beginners through setup, helping them understand codebases, and contextualizing commits and contributions.  
-- **Example**: Suppose the AI-driven CLI or support platform acknowledges onboarding questions with instant, useful responses, possibly reducing setup time by 30-50%.  
-- **Quantitative Insight**: With $(git log --since="30 days ago" --format="%an" | sort -u | wc -l) new contributors, if each interaction decreases initial onboarding time by, let's say, 20%, that`;
-        document.getElementById('technical-content').innerHTML = `Based on the provided data and the indicators, here's a technical health assessment for the repository using SAGE-AI:
+**How AI helps new contributors:**
+
+SAGE-AI significantly enhances new contributor onboarding by providing AI-driven guidance and support. With mechanisms to track recent activity, such as the number of new contributors over the past 30 days from the git log data, it becomes clear that AI tools are instrumental in welcoming new developers efficiently. AI can automate initial setup processes, recommend starter issues aligned with the contributor's skills, and offer personalized suggestions based on their coding patterns. This leads to a smoother transition into the community and reduces the intimidation factor that often deters newcomers.
+
+### 💬 Communication Quality
+
+**AI impact on issue/PR discussions:**
+
+The engagement with issues, as reflected by the number of participants over recent issues, shows enhanced communication quality enabled by`;
+        document.getElementById('technical-content').innerHTML = `Based on the provided data and context, here's a technical health assessment of the repository using SAGE-AI:
 
 ## 🔧 Technical Health Report
 
 ### 🏗️ Build System Stability
 **AI Impact on Build Reliability:**
-- **Successful Builds:** $(git log --since="7 days ago" --oneline | wc -l) builds in the last 7 days.
-- **Build Reliability:** SAGE-AI can analyze build logs to identify patterns and predict potential build failures. It can suggest optimizations and improvements to the build system to enhance reliability.
-- **Recommendations:** Implement automated build monitoring with SAGE-AI to receive real-time alerts and predictive insights. Use AI-driven code analysis to catch issues early in the build process.
+- **Positive Impact:** SAGE-AI can help identify patterns in build failures by analyzing commit histories and build logs. It can suggest potential causes of build issues and even propose fixes based on historical data.
+- **Recommendations:** Implement AI-driven build monitoring tools that can alert the team to potential issues before they cause widespread failures. Use SAGE-AI to analyze build logs and suggest optimizations to improve build times and reliability.
 
 ### 🐛 Bug Detection & Resolution
-**AI Helps Identify and Fix Issues:**
-- **Recent Bug Fixes:** $(git log --since="30 days ago" --grep="fix"`;
+**How AI Helps Identify and Fix Issues:**
+- **Bug Detection:** SAGE-AI can analyze commit messages and code changes to predict potential bugs. It can also use machine learning models to identify code smells and anti-patterns that are likely to cause issues.
+-`;
     </script>
 </body>
 </html>
